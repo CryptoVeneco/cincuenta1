@@ -64,6 +64,10 @@ Después del despliegue, CDK mostrará la URL de tu API Gateway. Puedes usar est
    - Método: GET
    - Ruta: /getByEmail
 
+4. Buscar cliente por fecha de creacion
+   - Método: GET
+   - Ruta: /getByDateRange
+
 Ejemplo de uso con curl:
 
 # Guardar un cliente
@@ -82,3 +86,7 @@ curl --location --request GET 'https://vcpyoz4m52.execute-api.us-east-1.amazonaw
 # Buscar cliente por email
 
 curl --location --request GET 'https://vcpyoz4m52.execute-api.us-east-1.amazonaws.com/getByEmail?email=medicenpensa@gmail.com'
+
+# Buscar cliente por fecha
+
+curl --location --request GET 'https://vcpyoz4m52.execute-api.us-east-1.amazonaws.com/getByDateRange?startDate=1727047509595&endDate=1727047509599'
